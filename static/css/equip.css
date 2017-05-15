@@ -1,0 +1,437 @@
+@charset "UTF-8";
+// 选择装备品质下拉框
+.selectedRect{
+    position:absolute;
+    left:15px;
+    top:45px;
+    width:18px;
+    height:18px;
+}
+.selectColor .el-input__inner{
+  text-align:center;
+}
+.equip-input .el-input__inner{  /* 自定义输入框样式 */
+  border-radius: 10px;
+  background-color: #d9dff1;
+  color: #222;
+}
+.colorRectangle{
+  display:inline-block;
+  width:18px;
+  height:18px;
+  vertical-align:middle;
+  margin:0 40px 0 10px;
+}
+.el-select-dropdown__item.selected.hover, .el-select-dropdown__item.hover,.el-select-dropdown__item.selected{
+  background-color:rgba(0,0,0,.8);
+}
+.el-select-dropdown{
+  background-color:rgba(0,0,0,.7);
+  border:1px solid #888;
+}
+.el-select-dropdown__item{
+  color:#fff;
+}
+.el-select{
+  width:220px;
+  height:38px;
+  border-radius:10px;
+}
+.el-input__inner{
+  background-color:transparent;
+  color:#fff;
+  vertical-align: middle;
+  border-radius:10px;
+}
+
+.right-container{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.center-container {
+  float: left;
+  height: 100%;
+  width: 280px;
+  overflow-y: hidden; }
+
+.center-content {
+  margin: 40px 0 0 30px;
+  font-size: 14px; 
+}
+  .center-content .equip-center-tit {
+    display: block;
+    width:220px;
+    color: #feffff;
+    margin-bottom: 20px; 
+    margin-top:20px;
+  }
+  .equip-name-input {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    width: 207px;
+    height: 36px;
+    vertical-align: middle;
+    border-radius: 10px;
+    background-color: #d9dff1;
+    color: #000; 
+  }
+  /*添加 删除按钮*/
+.add-btn, .del-btn {
+  display: inline-block;
+  width: 77px;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer; 
+}
+
+.add-btn {
+  background-color: #6cff81;
+  margin:20px 15px 0 0; 
+}
+
+.del-btn {
+  background-color: #ff6c6c;
+}
+
+.equip-set {
+  margin-left: 280px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px 90px 40px 0; 
+}
+.equip-set .equip-set-inner {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  position: relative;
+  // padding: 0 40px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  overflow-y:hidden;
+}
+
+/********************************套装页面 样式*******************************/
+.suit-content{
+  color:#666;
+  padding:0 40px;
+}
+.suit-content .suit-name {
+  float: left;
+  width: 33.33%; }
+.suit-content .suit-type {
+  float: left;
+  width: 33.33%;
+  text-align: center; 
+}
+.suit-content .suit-operate {
+  float: left;
+  width: 33.33%;
+  text-align: right; }
+.suit-content .suit-list li .suit-type {
+  color: #222; 
+}
+.suit-content .suit-list li .del {
+  cursor: pointer;
+  position: relative;
+  left: 15px; }
+
+.suit-tit, .equip-name-tit {
+  color: #feffff; 
+}
+
+.suit-tit, .suit-list li, .equip-name-tit, .equip-name-list li {
+  padding: 0 45px;
+  height: 60px;
+  line-height: 60px; 
+}
+
+.suit-list li, .equip-name-list li {
+  margin-bottom: 12px;
+  background-color: #fff;
+  border-radius: 10px; }
+
+/***********************************装备栏设置 页面*****************************/
+.equip-column-content {
+  height: 100%; 
+}
+.equip-column-content .equip-column-list {
+  padding:0 40px 20px;
+}
+.equip-column-content .equip-column-list li {
+  float: left;
+  width: 12%;
+  padding: 7% 0;
+  margin: 18px 1.14% 0;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+/******************************  装备名称设置 页面  **************************/
+.equip-name-content {
+  left: 50px;
+  right: 50px; 
+  padding:0 40px;
+}
+.equip-name-content .equip-name-tit, .equip-name-content .equip-name-list li {
+  padding: 0 80px 0 35px; 
+}
+.equip-name-content .equip-name {
+  float: left;
+  width: 25%; 
+}
+.equip-name-content .equip-quality, .equip-name-content .equip-type {
+  float: left;
+  width: 24%;
+  text-align: center; 
+}
+.equip-name-content .equip-operate {
+  float: left;
+  width: 25%;
+  text-align: right; 
+}
+.equip-name-content .equip-name-list li {
+  color: #222; 
+}
+.equip-name-list input{
+  height:40px;
+  vertical-align:middle;
+  width:100px;
+  text-align:center;
+  color:#666;
+}
+.equip-name-content .equip-name-list li .equip-operate em {
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+  left: 42px;
+  cursor: pointer;
+  color: #666; 
+}
+
+/********************** 装备品质设置页面 ************************/
+.equip-quality .suit-list li {
+  color: #000;
+  padding-right: 18px; 
+}
+.equip-quality .suit-list li .del {
+  color: #666;
+  left: 0;
+  margin-left: 12px; 
+}
+.equip-quality .suit-list li .suit-name {
+  position: relative;
+  left: 10px; 
+}
+.equip-quality .suit-list .move-up, .equip-quality .suit-list .move-down, .equip-quality .suit-list .del {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px; 
+}
+.equip-quality .suit-list .move-up, .equip-quality .suit-list .move-down {
+  width: 24px;
+  height: 30px;
+  background: url('../img/move-up.png') no-repeat center center;
+  cursor: pointer; 
+  -webkit-user-select:none;
+}
+.equip-quality .suit-list .move-down {
+  background-image: url('../img/move-down.png'); 
+}
+
+/**************************   装备升级经验参数设置页面  只有左右两栏   ************************/
+.right-content {
+  margin-left: 202px;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  height: 100%; 
+}
+.right-content.narrow {
+  margin-left: 52px; 
+}
+.right-content .right-content-inner {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  position: relative; 
+}
+.upgrade-content {
+  padding-top: 20px;
+  margin: 0 0 0 60px; 
+}
+.upgrade-content .row {
+  overflow: hidden; 
+}
+.upgrade-content .row .el-form-item {
+  float: left;
+  margin-right: 50px; 
+}
+/****************************   装备成长参数页面   ***************************/
+.equip-grow-content {
+  font-size: 14px;
+  color: #fff;
+  padding: 55px 45px;
+}
+.equip-grow-content .right-content-inner {
+  background-color: transparent; 
+}
+.equip-grow-table, .equip-grow-option {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px; 
+}
+
+.equip-grow-table {
+  text-align: center;
+  padding-bottom: 20px; }
+.equip-grow-table .row {
+  height: 60px;
+  line-height: 60px; }
+.equip-grow-table .row .equip-main-attr {
+  width: 30%;
+  margin: 0 4% 0 14%; }
+.equip-grow-table .row .equip-assistant-attr {
+  width: 30%;
+  margin: 0 18% 0 4%; }
+.equip-grow-table .grow-table-head {
+  height: 52px;
+  line-height: 52px;
+  margin-bottom: 20px;
+  background-color: rgba(234, 151, 122, 0.2);
+  border-radius: 10px; }
+.equip-grow-table .grow-table-head .equip-operate {
+  border: 1px solid #000; }
+.equip-grow-table .grow-table-body {
+  margin-top: -5px; }
+.equip-grow-table .grow-table-body li {
+  height: 32px;
+  margin-top: 25px;
+  width: 100%; }
+.equip-grow-table .grow-quality, .equip-grow-table .equip-main-attr, .equip-grow-table .equip-assistant-attr, .equip-grow-table .grow-operate {
+  float: left; }
+.equip-grow-table .grow-quality {
+  width: 10%; }
+.equip-grow-table .grow-quality span{
+  display: block;
+  width: 88%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px; }
+.equip-grow-table .equip-main-attr, .equip-grow-table .equip-assistant-attr {
+  width: 30%;
+  margin: 0 4%; }
+.equip-grow-table .equip-main-attr input, .equip-grow-table .equip-assistant-attr input,
+.equip-grow-table .equip-main-attr span, .equip-grow-table .equip-assistant-attr span {
+  float: left;
+  width: 30%;
+  text-align: center; }
+.equip-grow-table .grow-table-body .grow-quality span,.equip-grow-table .grow-table-body .equip-main-attr span, .equip-grow-table .grow-table-body .equip-assistant-attr span, .equip-grow-table .grow-table-body .equip-main-attr input, .equip-grow-table .grow-table-body .equip-assistant-attr input, .equip-grow-table .grow-table-body .grow-operate span {
+  height: 32px;
+  line-height: 32px; }
+.equip-grow-table .grow-table-body .grow-operate span {
+  cursor: pointer; }
+.equip-grow-table .grow-operate {
+  width: 14%;
+  text-align: center; }
+.equip-grow-table .grow-operate span {
+  margin-right: 15px; }
+.equip-grow-option {
+  position: absolute;
+  left: 45px;
+  right:45px;
+  bottom: 40px;
+  height: 124px;
+  line-height: 124px;
+  padding-left: 12px; 
+}
+.equip-grow-option li {
+  width: 96px;
+  text-align: center;
+  height: 96px;
+  line-height: 96px;
+  display: inline-block;
+  margin-right: 20px; }
+.equip-grow-option li span {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer; }
+.equip-grow-option li.on span {
+  width: 96px;
+  height: 96px;
+  line-height: 96px;
+  color: #fff799;
+  border-color: rgba(255, 247, 153, 0.5); }
+
+/**********************  装备等级参数设置页面  ********************/
+.equip-level-center {
+  padding: 40px 0 100px;
+  box-sizing: border-box;
+  overflow-y: hidden; }
+.equip-level-center .group-btn {
+  margin-left: 68px; }
+.equip-level-center .group-btn .add-btn {
+  margin-right: 6px; }
+
+.equip-level-center-inner {
+  padding: 20px 0 0 20px;
+  box-sizing: border-box;
+  color: #feffff;
+  font-size: 14px; }
+
+.equip-level-tit {
+  margin-bottom: 20px; }
+
+.level-num li {
+  float: left;
+  margin: 0 12px 10px 0;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #d9dff1;
+  border: 1px solid #979AA1;
+  cursor: pointer; }
+.level-num li.on {
+  background-color: #A9ABB1;
+  color: #fff; }
+
+.equip-level-center-inner {
+  margin-left: 40px;
+  margin-bottom: 15px;
+  width: 220px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.equip-level-left {
+  padding: 40px 40px 100px 0;
+  color: #fff; }
+.equip-level-left .equip-set-inner {
+  padding: 20px 0 0 20px; }
+.equip-level-left .dropdown-box {
+  margin-bottom: 20px; }
+.equip-level-left .equip-quality-tit {
+  display: block;
+  margin-bottom: 10px;
+  color: #d9dff1; }
+.equip-level-left .add-btn {
+  float: right;
+  margin: 15px 0 0 0; }
+.row > div {
+  float: left;
+  margin-right: 30px; }

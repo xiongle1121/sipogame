@@ -1,0 +1,72 @@
+body{
+  font:12px 'microsoft yahei',Arial,sans-serif;
+  color:#333;
+}
+article,aside,footer,header,nav,section {
+  display: block;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+}
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0; 
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #666; 
+}
+em, i {
+  font-style: normal; 
+}
+img {
+  border:none;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; 
+}
+.fl {
+  float: left; 
+}
+.fr {
+  float: right; 
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  line-height: 0;
+  clear: both; 
+}
+.text-center {
+  text-align: center; 
+}
+.hide {
+  display: none; 
+}
+input, button {
+  border: none;
+  background-color: transparent;
+  appearance: none;
+}
+input:-moz-placeholder {
+  color: #666; }
+
+input::-webkit-input-placeholder {
+  color: #666; 
+}
+input:-ms-input-placeholder {
+  color: #666; 
+}
+/*解决webkit浏览器上input框有黄色背景的问题*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  color: #666; 
+}
+.optiscroll-vtrack{  /*自定义滚动条样式*/
+  width:5px;
+  background:rgba(255,255,255,.5);
+  box-shadow: none;
+  border-radius:5px;
+}
